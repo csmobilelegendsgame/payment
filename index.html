@@ -69,10 +69,8 @@
         <div style="color: #d9534f; font-weight: bold; margin-bottom: 10px; display: flex; align-items: center;">
             <span style="margin-right: 5px;">⚠️</span> PENTING
         </div>
-        1. Masukkan nominal presisi: <strong>Rp27.000</strong>.<br>
-        2. Kode berlaku selama: <span id="timer" class="timer-highlight">10:00</span><br>
-        3. Jika waktu habis, klik tombol di bawah:<br>
-        <a href="mailto:csmobilelegendsgame@hotmail.com?subject=Refresh&body=refresh" class="btn-refresh">Refresh QRIS</a>
+        1. Masukkan nominal sesuai harga yang tertera: <strong>Rp27.000</strong>.<br>
+        2. Qris berlaku selama: <span id="timer" class="timer-highlight">5:00</span><br>
     </div>
 
     <div class="footer">
@@ -83,7 +81,7 @@
         <br><br>
         <a href="mailto:csmobilelegendsgame@hotmail.com">💬 Pusat Bantuan</a>
         <br>
-        <img src="coda.png" alt="Powered by Coda" class="coda-footer-logo">
+        Powered By <img src="coda.png" alt="Powered by Coda" class="coda-footer-logo">
     </div>
 </div>
 
@@ -95,7 +93,7 @@
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
 
-            minutes = minutes < 10 ? "0" + minutes : minutes;
+            minutes = minutes < 5 ? "0" + minutes : minutes;
             seconds = seconds < 10 ? "0" + seconds : seconds;
 
             display.textContent = minutes + ":" + seconds;
